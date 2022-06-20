@@ -1,0 +1,15 @@
+
+# use permisison
+permission.use: "fake.use"
+
+# Command messages [/fake]
+fake.help: "§l§eFAKE§r Use /fake (on/off) (name => optional)"
+fake.nopermission: "§l§cERROR§r Você não tem permissão para usar este commando"
+
+# Command messages [/fake on]
+fake.on.sucess: "§l§eFAKE§r Modo anonimo ativado com sucesso! ({fake})"
+fake.on.hasenable: "§l§eFAKE§r Seu fake ja está ativado!"
+
+# Command messages [/fake off]
+fake.off.sucess: "§l§eFAKE§r Modo anonimo desativado com sucesso!"
+fake.off.hasdisable: "§l§eFAKE§r Seu fake ja está desativado!"

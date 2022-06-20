@@ -22,7 +22,6 @@ class FakeCommand extends Command{
  public array $username = ["literateyet", "advocatecan", "chokehandle", "yeastdevice", "erraticunsteady", "rapidfatso", "pureforecast", "finishcarefully", "dealerscoreboard", "grainsimply", "evilprotect","innerkris", "pebblechutney", "teapainter", "embracelesson", "paltrystriking", "tangydream", "solverelevant", "runphoto", "bushshine", "overtestimony", "postulatesdraught", "peacetennis", "rainbowchemical", "goujonsever", "pantheonpeople", "tranquilproposed", "boardask", "surepepsi", "wastesdeltas", "parkarope", "mindevaluate", "squelchresolved", "affinityencounter", "naturallypast", "prayernescafe", "oblongatacharge", "flightglad", "physicallypaper", "businessdopping", "aukgymnastics", "appleturn", "holedick", "mourningsoup"];
  
  public function __construct($plugin){
-  $this->plugin = $plugin;
   parent::__construct('fake', '§7Ative o modo anonimo!');
  } 
  
@@ -68,7 +67,7 @@ class FakeCommand extends Command{
     $player->sendMessage($config->get("fake.nopermission"));
    }
   }else{
-   $this->plugin->getLogger()->critical("Comando fake permitido apenas dentro do servidor!");
+   $plugin->getLogger()->critical("Comando fake permitido apenas dentro do servidor!");
   }
   return true;
  }

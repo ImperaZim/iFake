@@ -20,8 +20,14 @@ class Loader extends PluginBase {
  
  public $fake = array();
  
+ public static $instance = null;
+ 
+ public static function getInstance() : Loader {
+		return self::$instance;
+	}
+ 
  public function onEnable() : void {
-  $this->getListener();
+  self::$instance = $this;
   $this->getCommands();
   $this->getConfig()->get("permission.use") ;
   $this->getLogger()->info(C::GREEN . "Plugin FakePlayer ativado!");

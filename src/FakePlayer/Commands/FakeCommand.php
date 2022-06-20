@@ -28,7 +28,7 @@ class FakeCommand extends Command{
  
  public function execute(CommandSender $player, string $commandLabel, array $args): bool{
   
-  $plugin = $this->plugin;
+  $plugin = Loader::getInstance();
   $xuid = $player->getXuid();
   $config = $plugin->getConfig();
   

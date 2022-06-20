@@ -1,0 +1,9 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/ImperaZim/FakePlayer
+branches:
+  - main
+projects:
+  FakePlayer:
+    icon: meta/FakePlayer.png
+    lint:
+      phpstan: false
+... 

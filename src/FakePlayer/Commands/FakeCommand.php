@@ -19,11 +19,9 @@ use pocketmine\{
 
 class FakeCommand extends Command { 
  
- private $plugin;
- 
  public array $username = ["literateyet", "advocatecan", "chokehandle", "yeastdevice", "erraticunsteady", "rapidfatso", "pureforecast", "finishcarefully", "dealerscoreboard", "grainsimply", "evilprotect","innerkris", "pebblechutney", "teapainter", "embracelesson", "paltrystriking", "tangydream", "solverelevant", "runphoto", "bushshine", "overtestimony", "postulatesdraught", "peacetennis", "rainbowchemical", "goujonsever", "pantheonpeople", "tranquilproposed", "boardask", "surepepsi", "wastesdeltas", "parkarope", "mindevaluate", "squelchresolved", "affinityencounter", "naturallypast", "prayernescafe", "oblongatacharge", "flightglad", "physicallypaper", "businessdopping", "aukgymnastics", "appleturn", "holedick", "mourningsoup"];
  
- public function __construct($plugin){
+ public function __construct(){
   parent::__construct('fake', '§7Ative o modo anonimo!');
  } 
  

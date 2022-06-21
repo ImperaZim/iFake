@@ -44,7 +44,7 @@ class Loader extends PluginBase {
  
  public function getCommands() {
   $map = $this->getServer()->getCommandMap();
-		$map->register("fake", new FakeCommand($this));  
+		$map->register("fake", new FakeCommand());  
  }
  
  public function iFake($function, $xuid, $nametag = "null"){

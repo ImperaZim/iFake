@@ -4,8 +4,6 @@ branches:
 - main
 projects:
   FakePlayer:
-    icon: meta/1655767389117.png
-    lint:
-      phpstan: false 
     path: ""
+    icon: icon.png
 ...

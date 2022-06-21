@@ -32,17 +32,13 @@ class FakeCommand extends Command {
   $xuid = $player->getXuid();
   $config = $plugin->getConfig();
   
-  if(!isset($args[0])){ $args[0] = "off"; return; }
-  if(!isset($args[0])){ $args[1] = "not-found"; return; }
-  
   if($player instanceof Player){
    if($player->hasPermission($config->get("permission.use"))){
     if(isset($args[0])){
      $state = strtolower($args[0]);
      switch ($state) {
       case "on":
-       if(isset(args[1])){
-        $nametag = $args[1];
+       if(isset($args[1])){ $nametag = $args[1];
        }else{
         $id = mt_rand(0, count($this->username));
         $nametag = $this->username[$id];

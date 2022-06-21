@@ -29,7 +29,7 @@ class FakeCommand extends Command {
  
  public function execute(CommandSender $player, string $commandLabel, array $args): bool{
   
-  $args = $args;
+  $args = $args();
   $plugin = Loader::getInstance();
   $player = $plugin->getServer()->getPlayerExact($player->getName());
   $xuid = $player->getXuid();

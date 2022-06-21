@@ -52,7 +52,6 @@ class Loader extends PluginBase {
    case "get":
     $this->getLogger()->notice("get ({$xuid} => {$this->fake[$xuid]})!");
     return $this->fake["$xuid"];
-    break;
    case "set":
     $this->getLogger()->notice("set ({$nametag})!");
     $this->fake["$xuid"] = $nametag;
@@ -70,7 +69,6 @@ class Loader extends PluginBase {
      $this->getLogger()->notice("check => ({$xuid}) in false!");
      return false;
     }
-    break;
   }
  }
  

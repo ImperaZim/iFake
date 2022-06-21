@@ -32,6 +32,9 @@ class FakeCommand extends Command {
   $xuid = $player->getXuid();
   $config = $plugin->getConfig();
   
+  if(!isset($args[0])){ $args[0] = "off"; return; }
+  if(!isset($args[0])){ $args[1] = "not-found"; return; }
+  
   if($player instanceof Player){
    if($player->hasPermission($config->get("permission.use"))){
     if(isset($args[0])){
